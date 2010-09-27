@@ -20,6 +20,8 @@ sub check_nick_changed{
 	if ($alternate_nick eq $server->{nick})
 	{
 		$server->command('/msg NickServ ghost ' . $oldnick);
+		$server->command('/wait 2000');
+		$server->command('/nick ' . $oldnick);
 	}
 }
 
