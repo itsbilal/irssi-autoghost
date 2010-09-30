@@ -1,5 +1,0 @@
-To install this script and run it, please copy the file autoghost.pl into the ~/.irssi/scripts/
-directory, then symlink it in the ~/.irssi/scripts/autorun directory with the below command
-
-cd ~/.irssi/scripts/autorun
-ln -s ../autoghost.pl
