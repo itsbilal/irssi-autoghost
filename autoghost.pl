@@ -13,6 +13,10 @@ $VERSION = "0.1.0";
     url         => 'http://lewk.org/log/code/irssi-notify',
 );
 
+# Please note that this script works only if your 'nick' AND
+# 'alternate_nick' settings are set and both of them are registered
+# to the SAME account (see /msg NickServ help group) .
+
 sub check_nick_changed{
 	my($server) = @_;
 	my $alternate_nick = Irssi::settings_get_str('alternate_nick');
@@ -20,7 +24,7 @@ sub check_nick_changed{
 	if ($alternate_nick eq $server->{nick})
 	{
 		$server->command('/msg NickServ ghost ' . $oldnick);
-		$server->command('/wait 2000');
+		$server->command('/wait 3000');
 		$server->command('/nick ' . $oldnick);
 	}
 }

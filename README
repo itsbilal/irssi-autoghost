@@ -1,3 +1,12 @@
+********* NOTICE: BEFORE INSTALLING **************
+This script works ONLY if your 'nick' and 'alternate_nick' settings are set in Irssi and BOTH of them
+are separate nicks which are registered to the SAME account in NickServ (see /msg NickServ help group for details).
+If not, please register your first nick and then group the second one in. This needs to be done for the script to ghost nicks properly.
+
+--
+
+INSTALLATION:
+
 To install this script and run it, please copy the file autoghost.pl into the ~/.irssi/scripts/
 directory, then symlink it in the ~/.irssi/scripts/autorun directory with the below command
 
