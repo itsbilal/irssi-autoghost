@@ -3,7 +3,7 @@ use strict;
 use Irssi;
 use vars qw($VERSION %IRSSI);
 
-$VERSION = "0.1.0";
+$VERSION = "0.1.1";
 %IRSSI = (
     authors     => 'Bilal Akhtar',
     contact     => 'bilalakhtar@ubuntu.com',
